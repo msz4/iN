@@ -9010,7 +9010,7 @@ hr {
 
 .arrow-back{
     font-size:36px; 
-    color: #FB3640;
+    color: #c0392b;
     margin:0; 
     padding:0;
 }
@@ -9038,19 +9038,19 @@ hr {
 }
 
 .option-initial{
-    background-color:#4FB286; 
+    background-color:#27ae60; 
     border:none;
     color:white;
 }
 
 .option-correct{
-    background-color:#5995ED; 
+    background-color:#2980b9; 
     border:none;
     color:white;
 }
 
 .option-wrong{
-    background-color:#FB3640; 
+    background-color:#c0392b; 
     border:none;
     color:white;
 }
