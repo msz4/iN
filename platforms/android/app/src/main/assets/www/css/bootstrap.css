@@ -9041,17 +9041,20 @@ hr {
     background-color:#16a085; 
     border:none;
     color:white;
+    padding: 6px;
 }
 
 .option-correct{
     background-color:#2980b9; 
     border:none;
     color:white;
+    padding: 6px;
 }
 
 .option-wrong{
     background-color:#c0392b; 
     border:none;
     color:white;
+    padding: 6px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
