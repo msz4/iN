@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Play</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="quizcode.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+</head>
+<body>
+ <div class="vertical-top">
+    <div class ="container">
+            <table class="table" >
+    <thead>
+      <tr>
+        <th> <a href ="play.html"><i class="fa fa-arrow-left" style="font-size:36px"></i></a></th>
+        <th style="text-align: right"><h3 id ='score'>0</h3></th>
+        <th style="text-align: right" id = "lives"><i class="fa fa-heart"  style="font-size:36px; color:blue"></i>x3</th>
+      </tr>
+    </thead>
+        </table></div></div>
+    
+    <div class="vertical-center-quiz">
+    <div class ="container">
+        <center>
+        <div class ='row' style="justify-content:center">
+            <div class="col-lg-6" >
+                <h1 style="font-family: gameFont" id ="que"></h1>
+            </div>
+        </div>
+      </center>
+        <br>
+        <br>
+        
+        <div class="row" >
+            <div class="col-lg-6" style="border-bottom: 5px solid #fff;">
+                <button type="button" id ="opt1c" class="btn btn-primary btn-block" ><h4 id ="opt1c_"></h4></button>
+            </div> 
+             <div class="col-lg-6" style="border-bottom: 5px solid #fff;">
+                <button type="button" id ="opt2c ", class="btn btn-primary btn-block"><h4 id ="opt2c_"></h4></button>
+            </div> 
+            <br>
+            <div class="col-lg-6" style="border-bottom: 5px solid #fff;">
+                <button type="button" id ="opt3c" class="btn btn-primary btn-block"><h4 id ="opt3c_"></h4></button>
+            </div>    
+            <div class="col-lg-6" style="border-bottom: 5px solid #fff;">
+                <button type="button" id ="opt4c" class="btn btn-primary btn-block"><h4 id ="opt4c_"></h4></button>
+            </div>    
+        </div>
+        </div></div>
+    
+    
+    
+<script>
+    loadplaycapitals();
+</script>
+</body>
+</html>
