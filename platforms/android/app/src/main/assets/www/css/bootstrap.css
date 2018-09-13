@@ -8986,6 +8986,7 @@ a.text-dark:hover, a.text-dark:focus {
 
   display: flex;
   align-items: top;
+padding-top: 5px;
 }
 .vertical-center-quiz {
   min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
