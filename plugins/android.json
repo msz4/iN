@@ -12,6 +12,12 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.tinqe.testnative"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.tinqe.testnative"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.tinqe.testnative"
     }
   },
   "dependent_plugins": {}

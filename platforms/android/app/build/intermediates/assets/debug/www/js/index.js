@@ -28,7 +28,7 @@ var app = {
     "S20": {"name": "Katsina", "capital":"Katsina", "region": "NW", "LGANum":"34","LGAs":["Bakori","Batagarawa", "Batsari", "Baure", "Bindawa", "Chanranchi", "Dan Musa", "Dandume", "Danja",  "Daura", "Dutsi", "Dutsin-Ma", "Faskari", "Funtua","Ingawa","Jibia", "Kafur", "Kaita", "Kankara", "Kankia", "Katsina", "Kurfi", "Kusada", "Mai'Adua", "Malumufashi", "Mani", "Mashi", "Matazu", "Musawa", "Rimi", "Sabuwa", "Safana", "Sandamu", "Zango"], "Region": "North West", "Options":["","", "", "", "", "", ""], "map":"kt"},
     "S21": {"name": "Kebbi", "capital":"Birnin Kebbi","region": "NW", "LGANum":"21","LGAs":["Aleiro","Arewa Dandi", "Argungu", "Augie", "Bagudo", "Birnin Kebbi", "Bunza", "Dandi", "Fakai", "Gwandu", "Jega", "Kalgo", "Koko/Besse", "Maiyama", "Ngaski", "Sakaba", "Shanga", "Suru", "Danko/Wasagu", "Yauri", "Zuru"], "Region": "North West", "Options":["","", "", "", "", "", ""], "map":"kb"},
     "S22": {"name": "Kogi", "capital":"Lokoja","region": "NC", "LGANum":"21","LGAs":["Adavi","Ajaokuta", "Ankpa", "Bassa", "Dekina", "Ibaji", "Idah", "Igalamela-Odolu", "Ijumu", "Kabba/Bunu", "Koton Karfe", "Lokoja", "Mopa-Muro", "Ofu", "Ogori/Magongo", "Okehi", "Okene", "Olamboro", "Omala", "Yagba East", "Yagba West"], "Region": "North Central", "Options":["","", "", "", "", "", ""], "map":"kg"},
-    "S23": {"name": "Kwara", "capital":"Illorin", "region": "NC", "LGANum":"16","LGAs":["Asa","Baruten", "Edu", "Ekiti", "Ifelodun", "Ilorin East", "Ilorin South", "Ilorin West", "Irepodun", "Isin", "kaiama", "Moro", "Offa", "Oke Ero", "Oyun", "Pategi"], "Region": "North Central", "Options":["","", "", "", "", "", ""], "map":"kr"},
+    "S23": {"name": "Kwara", "capital":"Ilorin", "region": "NC", "LGANum":"16","LGAs":["Asa","Baruten", "Edu", "Ekiti", "Ifelodun", "Ilorin East", "Ilorin South", "Ilorin West", "Irepodun", "Isin", "kaiama", "Moro", "Offa", "Oke Ero", "Oyun", "Pategi"], "Region": "North Central", "Options":["","", "", "", "", "", ""], "map":"kr"},
     "S24": {"name": "Lagos", "capital":"Ikeja","region": "SW", "LGANum":"20","LGAs":["Agege","Alimosho Ifelodun", "Alimosho", "Amuwo-Odofin", "Apapa", "Badagry", "Epe", "Eti-Osa", "Ibeju-Lekki", "Ifako/Ijaye", "Ikeja", "Ikorodu", "Kosofe", "Lagos Island", "Lagos Mainland", "Mushin", "Ojo", "Oshodi-Isolo", "Shomolu", "Surulere"], "Region": "South West", "Options":["","", "", "", "", "", ""], "map":"lg"},
     "S25": {"name": "Nassarawa", "capital":"Lafia","region": "NC", "LGANum":"13","LGAs":["Karu","Keffi", "Kokona", "Nasarawa", "Toto", "Akwanga", "Nasarawa Egon", "Wamba", "Awe", "Doma", "Keana", "Lafia", "Obi"], "Region": "North Central", "Options":["","", "", "", "", "", ""], "map":"ns"},
     "S26": {"name": "Niger", "capital":"Minna", "region": "NC", "LGANum":"25","LGAs":["Agaie","Agwara", "Bida", "Borgu", "Bosso", "Chanchaga", "Edati", "Gbako", "Gurara", "Katcha", "Kontogora", "Lapai", "Lavun", "Magama", "Mariga", "Mashegu", "Mokwa", "Munya", "Paikoro", "Rafi", "Rijau", "Shiroro", "Suleja", "Tafa", "Wushishi"], "Region": "North Central", "Options":["","", "", "", "", "", ""], "map":"ng"},
@@ -47,17 +47,17 @@ var app = {
     "sOptions":{"NE": ["Adamawa", "Bauchi", "Borno", "Gombe", "Taraba", "Yobe"], "NW": ["Jigawa", "Kano", "Kaduna", "Katsina", "Kebbi", "Sokoto", "Zamfara"], "NC" : ["Niger", "Kogi", "Benue", "Plateau", "Nassarawa", "Kwara", "Federal Capital Territory"], "SE": ["Enugu", "Imo", "Ebonyi", "Abia", "Anambra"], "SS": ["Bayelsa", "Akwa Ibom", "Edo", "Rivers", "Cross River", "Delta"], "SW": ["Oyo", "Ekiti", "Osun", "Ondo", "Lagos", "Ogun"]}
 }
         
-        this.capitals1="<div class='vertical-top'><div class ='container'><div class='row'><div class ='col pull-left'><a href ='' id='home'><i class='fa fa-arrow-left arrow-back'></i></a></div><div class ='col' style='text-align:center; margin:0; padding:0'><h1 id ='score' style='margin:0; padding:0; color: #FFE066;display: inline;'>0</h1></div><div class ='col pull-right' style='text-align:right; color:#696D7D' id = 'lives'><i class='fa fa-heart' style='font-size:36px; color: #4FB286'></i>x3</div></div></div></div><div class='vertical-center-quiz'> <div class ='container'> <center> <div class ='row' style='justify-content:center;'> <div class='col-lg-6' > <h1 style='font-family: gameFont; color:#696D7D' id ='que'></h1> </div> </div> </center> <br> <br> <div class='row' > <div class='col-lg-6' style='border-bottom: 3px solid #F2EFEA;'> <button type='button' id ='opt1c' class='btn btn-block'style='background-color:#4FB286; border:none' ><h4 id ='opt1c_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 3px solid #F2EFEA;'> <button type='button' id ='opt2c', class='btn  btn-block' style='background-color:#4FB286; border:none'><h4 id ='opt2c_'></h4></button> </div> <br> <div class='col-lg-6' style='border-bottom: 3px solid #F2EFEA;'> <button type='button' id ='opt3c' class='btn  btn-block' style='background-color:#FFE066; border:none'><h4 id ='opt3c_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 3px solid #F2EFEA;'> <button type='button' id ='opt4c' class='btn btn-block' style='background-color:#4FB286; border:none'><h4 id ='opt4c_'></h4></button> </div> </div> </div></div>";
+        this.capitals1="<div class='vertical-top-ui'><div class ='container'><div class='row'><div class ='col pull-left'><a href ='' id='home'><i class='fa fa-arrow-left arrow-back'></i></a></div><div class ='col' style='text-align:center; margin:0; padding:0'><h1 id ='score' style='margin:0; padding:0; color: #2980b9; display: inline;'>0</h1></div><div class ='col pull-right' style='text-align:right; color:#696D7D' id = 'lives'><i class='fa fa-heart' style='font-size:2.5rem; color: #16a085'></i>x3</div></div><hr class='content-divider'></div></div><div class='vertical-center-quiz'> <div class ='container'> <center> <div class ='row' style='justify-content:center;'> <div class='col-lg-6' > <h1 style='font-family: gameFont; color:#696D7D' id ='que'></h1> </div> </div> </center> <br> <br> <div class='row' > <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' id ='opt1c' class='btn btn-block option-initial'><h4 id ='opt1c_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' id ='opt2c', class='btn  btn-block option-initial'><h4 id ='opt2c_'></h4></button> </div> <br> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' id ='opt3c' class='btn  btn-block option-initial'><h4 id ='opt3c_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' id ='opt4c' class='btn btn-block option-initial'><h4 id ='opt4c_'></h4></button> </div> </div> </div></div>";
         
-        this.capitals2="<div class='vertical-top'> <div class ='container'> <table class='table' > <thead> <tr> <th> <a href ='' id='home'><i class='fa fa-arrow-left' style='font-size:36px; color: #FB3640 '></i></a></th> <th style='text-align: right'><h3 id ='score'>0</h3></th> <th style='text-align: right' id = 'lives'><i class='fa fa-heart' style='font-size:36px; color: #1493E2'></i>x3</th> </tr> </thead> </table></div></div> <div class='vertical-center-quiz'> <div class ='container'> <div class ='row' style='justify-content:center'> <div class='col-lg-6'> <img style='max-width: 100%' id='map' src='' alt=''> </div> </div> <br> <div class='row' > <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt1c' class='btn btn-primary btn-block' ><h4 id ='opt1c_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt2c', class='btn btn-primary btn-block'><h4 id ='opt2c_'></h4></button> </div> <br> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt3c' class='btn btn-primary btn-block'><h4 id ='opt3c_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt4c' class='btn btn-primary btn-block'><h4 id ='opt4c_'></h4></button> </div> </div> </div></div>";
+        this.capitals2="<div class='vertical-top-ui'><div class ='container'><div class='row'><div class ='col pull-left'><a href ='' id='home'><i class='fa fa-arrow-left arrow-back'></i></a></div><div class ='col' style='text-align:center; margin:0; padding:0'><h1 id ='score' style='margin:0; padding:0; color: #5995ED;display: inline;'>0</h1></div><div class ='col pull-right' style='text-align:right; color:#696D7D' id = 'lives'><i class='fa fa-heart' style='font-size:2.5rem;; color: #4FB286'></i>x3</div></div><hr class='content-divider'></div></div><div class='vertical-center-quiz'> <div class ='container'> <div class ='row' style='justify-content:center'> <div class='col-lg-6'> <img style='max-width: 100%' id='map' src='' alt=''> </div> </div> <br> <div class='row' > <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt1c' class='btn btn-primary btn-block' ><h4 id ='opt1c_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt2c', class='btn btn-primary btn-block'><h4 id ='opt2c_'></h4></button> </div> <br> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt3c' class='btn btn-primary btn-block'><h4 id ='opt3c_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom: 0.30rem;'> <button type='button' onclick = 'checkAnsCapital(this.id)' id ='opt4c' class='btn btn-primary btn-block'><h4 id ='opt4c_'></h4></button> </div> </div> </div></div>";
         
-        this.gameover =" <div class='vertical-center-quiz'> <div class='container'> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h3 >Highscore</h3> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h1 id='best'></h1> </center> </div> <div class='col align-self-end'></div> </div><br> <br> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h3 >Score</h3> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h1 id='score'></h1> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h3 id='comment'></h3> </center> </div> <div class='col align-self-end'></div> </div> <br> <br> <br> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <a href='#' id='btn_restart' class='btn btn-outline-success btn-block'><h4>Restart</h4></a> <a href='#' id='btn_home' class='btn btn-outline-primary btn-block'><h4>Play</h4></a> </div> <div class='col align-self-end'></div> </div> <br><br><br> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <p id='report1'></p> <br> <p id ='report2'></p> </div> <div class='col align-self-end'></div> </div></div> </div>";
+        this.gameover =" <div class='vertical-center-quiz' style='color:#696D7D'> <div class='container'> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <br><br><h3 >Highscore</h3> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center><h1 id='best'></h1> </center> </div> <div class='col align-self-end'></div> </div><br> <br> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h3 >Score</h3> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h1 id='score'></h1> </center> </div> <div class='col align-self-end'></div> </div> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <center> <h3 id='comment'></h3> </center> </div> <div class='col align-self-end'></div> </div> <br> <br> <br> <div class='row'> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <a href='#' id='btn_restart' class='btn btn-block option-initial text-white' ><h4>Restart</h4></a> <a href='#' id='btn_home' class='btn btn-block text-white' style='background-color:#03312E'><h4>Main Menu</h4></a> </div><div class='col align-self-end'></div> </div></div> </div>";
         
-        this.homepage = " <div class='vertical-center-quiz'><div class ='container'> <div class='row '> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <a href='#' id='btn_playcapitals1' class='btn btn-block text-white' style='background-color:#466060'><h4>Capitals: Regular Mode</h4></a> <a href='#' id='btn_playcapitals2' class='btn btn-block text-white' style='background-color:#4FB286'><h4>Capitals: Map Mode <kbd id='statsCapitals2'><i class='fa fa-lock'></i></kbd></h4></a> <a href='#' id='btn_playstates1' class='btn btn-block text-white' style='background-color:#466060'><h4>States: Regular Mode</h4></a> <a href='#' id='btn_playstates2' class='btn btn-block text-white' style='background-color:#4FB286'><h4 id='lockedStates'>States: Challenging <kbd id='statsStates2'><i class='fa fa-lock'></i></kbd></h4></a> </div> <div class='col align-self-end'></div> </div></div> </div>";
+        this.homepage = "<div class='vertical-top-ui text-white'><div class ='container'><div class='row'><div class ='col' style='text-align:center; margin:0; padding:0'><h1>iNigeria</h1></div></div></div></div><div class='vertical-center-quiz'><div class ='container'> <div class='row '> <div class='col align-self-start'></div> <div class='col-lg-6 align-self-center'> <a href='#' id='btn_playcapitals1' class='btn btn-block text-white' style='background-color:#16a085'><h4>Capitals: Regular Mode</h4></a> <a href='#' id='btn_playcapitals2' class='btn btn-block text-white' style='background-color:#03312E'><h4>Capitals: Map Mode </h4></a> <a href='#' id='btn_playstates1' class='btn btn-block text-white' style='background-color:#16a085'><h4>States: Regular Mode</h4></a> <a href='#' id='btn_playstates2' class='btn btn-block text-white' style='background-color:#03312E'><h4 id='lockedStates'>States: Map Mode </h4></a> </div> <div class='col align-self-end'></div> </div></div> </div><footer class='footer' style='position: absolute; bottom:0;background-color: #696D7D;text-align:center; color:#fff; width:100%'>© 2018 <a href='tinqe.com' target='_blank'>Tinqe</a></footer>";
         
-        this.states1= "<div class='vertical-top'> <div class ='container'> <table class='table' > <thead> <tr> <th> <a href ='' id='home'><i class='fa fa-arrow-left' style='font-size:36px; color: #1493E2'></i></a></th> <th style='text-align: right'><h3 id ='score'>0</h3></th> <th style='text-align: right' id = 'lives'><i class='fa fa-heart' style='font-size:36px; color: #1493E2'></i>x3</th> </tr> </thead> </table></div></div> <div class='vertical-center-quiz'> <div class ='container'> <center> <div class ='row' style='justify-content:center'> <div class='col-lg-12' > <h1 style='font-family: gameFont' id ='que'></h1> </div> </div> </center> <br> <br> <div class='row' > <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt1s' class='btn btn-primary btn-block' ><h4 id ='opt1s_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt2s', class='btn btn-primary btn-block'><h4 id ='opt2s_'></h4></button> </div> <br> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt3s' class='btn btn-primary btn-block'><h4 id ='opt3s_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt4s' class='btn btn-primary btn-block'><h4 id ='opt4s_'></h4></button> </div> </div> </div></div>";
+        this.states1= "<div class='vertical-top-ui'><div class ='container'><div class='row'><div class ='col pull-left'><a href ='' id='home'><i class='fa fa-arrow-left arrow-back'></i></a></div><div class ='col' style='text-align:center; margin:0; padding:0'><h1 id ='score' style='margin:0; padding:0; color: #5995ED;display: inline;'>0</h1></div><div class ='col pull-right' style='text-align:right; color:#696D7D' id = 'lives'><i class='fa fa-heart' style='font-size:2.5rem; color: #4FB286'></i>x3</div></div><hr class='content-divider'> </div></div><div class='vertical-center-quiz'> <div class ='container'> <center> <div class ='row' style='justify-content:center'> <div class='col-lg-12' > <h1 style='font-family: gameFont;color:#696D7D' id ='que'></h1> </div> </div> </center> <br> <br> <div class='row' > <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt1s' class='btn btn-primary btn-block' ><h4 id ='opt1s_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt2s', class='btn btn-primary btn-block'><h4 id ='opt2s_'></h4></button> </div> <br> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt3s' class='btn btn-primary btn-block'><h4 id ='opt3s_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt4s' class='btn btn-primary btn-block'><h4 id ='opt4s_'></h4></button> </div> </div> </div></div>";
         
-        this.states2 ="<div class='vertical-top'> <div class ='container'> <table class='table' > <thead> <tr> <th> <a href ='' id='home'><i class='fa fa-arrow-left' style='font-size:36px; color: #1493E2''></i></a></th> <th style='text-align: right'><h3 id ='score'>0</h3></th> <th style='text-align: right' id = 'lives'><i class='fa fa-heart' style='font-size:36px; color: #1493E2'></i>x3</th> </tr> </thead> </table></div></div> <div class='vertical-center-quiz'> <div class ='container'> <div class ='row' style='justify-content:center'> <div class='col-lg-6'> <img style='max-width: 100%' id='map' src='' alt='map'> </div> </div> <br> <div class='row' > <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt1s' class='btn btn-primary btn-block' ><h4 id ='opt1s_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt2s', class='btn btn-primary btn-block'><h4 id ='opt2s_'></h4></button> </div> <br> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt3s' class='btn btn-primary btn-block'><h4 id ='opt3s_'></h4></button> </div> <div class='col-lg-6' style='border-bottom: 5px solid #fff;'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt4s' class='btn btn-primary btn-block'><h4 id ='opt4s_'></h4></button> </div> </div> </div></div>";
+        this.states2 ="<div class='vertical-top-ui'><div class ='container'><div class='row'><div class ='col pull-left'><a href ='' id='home'><i class='fa fa-arrow-left arrow-back'></i></a></div><div class ='col' style='text-align:center; margin:0; padding:0'><h1 id ='score' style='margin:0; padding:0; color: #5995ED;display: inline;'>0</h1></div><div class ='col pull-right' style='text-align:right; color:#696D7D' id = 'lives'><i class='fa fa-heart' style='font-size:2.5rem; color: #4FB286'></i>x3</div></div><hr class='content-divider'></div></div><div class='vertical-center-quiz'> <div class ='container'> <div class ='row' style='justify-content:center'> <div class='col-lg-6'> <img style='max-width: 100%' id='map' src='' alt='map'> </div> </div> <br> <div class='row' > <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt1s' class='btn btn-primary btn-block' ><h4 id ='opt1s_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt2s', class='btn btn-primary btn-block'><h4 id ='opt2s_'></h4></button> </div> <br> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt3s' class='btn btn-primary btn-block'><h4 id ='opt3s_'></h4></button> </div> <div class='col-lg-6' style='padding-bottom:0.30rem'> <button type='button' onclick = 'checkAnsState(this.id)' id ='opt4s' class='btn btn-primary btn-block'><h4 id ='opt4s_'></h4></button> </div> </div> </div></div>";
         
     counter = 0;
     lives = 3;
@@ -67,6 +67,11 @@ var app = {
 
     receivedEvent: function(id) {
         document.getElementById('content').innerHTML=this.homepage;
+        
+        correct_sound = new Media('http://localhost:8000/sound/correct.wav');
+        wrong_sound = new Media('http://localhost:8000/sound/wrong.wav');
+        nav_sound = new Media('http://localhost:8000/sound/nav.wav');
+        
         NativeStorage.getItem("capitals1Best", function (result) {document.getElementById("statsCapitals1").innerHTML=result+"/37";},function (e) {});    
         document.getElementById("btn_playcapitals1").onclick = function(){
             app.loadPage("CapitalsI");
@@ -204,6 +209,9 @@ var app = {
     },
         
     nextQuestionCapitals:function (){
+        if(counter>36){
+            app.showscore();
+        }
         app.reset();
         console.log('count q'+ counter);
         var queKey = statesArray[counter];
@@ -240,6 +248,9 @@ var app = {
                },
     
     nextQuestionStates: function (){
+        if(counter>36){
+            app.showscore();
+        }
         app.reset();
         console.log('count '+ counter);
         console.log("the array: "+statesArray);
@@ -326,6 +337,7 @@ var app = {
         document.getElementById(choiceid).disabled = true;
         var choice = document.getElementById(choiceid+'_').innerHTML;
         if(ans==choice){
+            correct_sound.play();
             score+=1;
             document.getElementById('score').innerHTML = score;
             var btn = document.getElementById(choiceid);
@@ -334,6 +346,7 @@ var app = {
             setTimeout(app.correctCapital, 500);
         }
         else{
+            wrong_sound.play();
             lives-=1;
             if(lives>=0){
             app.colorlives();}
@@ -342,6 +355,7 @@ var app = {
             btn.classList.add("option-wrong");
             if (lives>=0)
             {
+                console.log('step 1');
                 app.wrongCapitals();
             }
             else{
@@ -356,6 +370,7 @@ var app = {
          document.getElementById(choiceid).disabled = true;
         var choice = document.getElementById(choiceid+'_').innerHTML;
         if(ans==choice){
+            correct_sound.play();
             score+=1;
             document.getElementById('score').innerHTML = score;
             var btn = document.getElementById(choiceid);
@@ -365,6 +380,7 @@ var app = {
         }
         
         else{
+            wrong_sound.play();
             lives-=1;
             if(lives>=0){
             app.colorlives();}
@@ -372,7 +388,9 @@ var app = {
             btn.classList.remove("option-initial");
             btn.classList.add("option-wrong");
             if (lives>=0)
-            {app.wrongStates();}
+            {
+                console.log('step 1');
+                app.wrongStates();}
             else{
                 app.gameoverPageS()
             }
@@ -381,7 +399,7 @@ var app = {
     },
     
     colorlives: function(){
-        document.getElementById('lives').innerHTML = '<i class="fa fa-heart"  style="font-size:36px; color: #1493E2"></i>x' + lives;
+        document.getElementById('lives').innerHTML = '<i class="fa fa-heart"  style="font-size:36px; color: #16a085"></i>x' + lives;
     },
     
     /*correctState: function(){
@@ -397,7 +415,7 @@ var app = {
     correctState: function(){
         if(score>=37)
             {
-               // app.gamewon()
+               app.showscore()
             }
         else{
             console.log(counter);
@@ -409,7 +427,7 @@ var app = {
     correctCapital: function(){
         if(score>=37)
             {
-               // app.gamewon()
+               app.showscore()
             }
         else{
             console.log(counter);
@@ -422,7 +440,7 @@ var app = {
     wrongCapitals: function(){
         for(var i=1;i<5;i++){
             var test = document.getElementById("opt"+i+"c_").innerHTML;
-            if(test==this.ans) {
+            if(test==ans) {
                 var btn = document.getElementById("opt"+i+"c");
                 btn.classList.remove("option-initial");
                 btn.classList.add("option-correct");
@@ -436,7 +454,7 @@ var app = {
     wrongStates: function(){
         for(var i=1;i<5;i++){
             var test = document.getElementById("opt"+i+"s_").innerHTML;
-            if(test==this.ans) {
+            if(test==ans) {
                 var btn = document.getElementById("opt"+i+"s");
                 btn.classList.remove("option-initial");
                 btn.classList.add("option-correct");
@@ -450,6 +468,8 @@ var app = {
     gameoverPageC:function(){
         for(var i=1;i<5;i++){
             var test = document.getElementById("opt"+i+"c_").innerHTML
+            console.log(ans);
+            console.log(test);
             if(test==ans) {
                 var btn = document.getElementById("opt"+i+"c");
                 btn.classList.remove("option-initial");
@@ -457,7 +477,7 @@ var app = {
                 break;
             }   
         }
-        setTimeout(app.showscore(), 500);
+        setTimeout(app.showscore, 500);
     },
     
     gameoverPageS:function(){
@@ -470,7 +490,7 @@ var app = {
                 break;
             }   
         }
-        setTimeout(app.showscore(), 500);
+        setTimeout(app.showscore, 500);
     },
     
     showscore: function (){
@@ -503,22 +523,22 @@ var app = {
                         });    
         
         if(score>=37){
-            document.getElementById('comment').innerHTM ='<i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star" style="font-size:48px;color:yellow"></i>';
+            document.getElementById('comment').innerHTML ='<i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star" style="font-size:48px;color:#EAD300"></i>';
         }
         else if(score>=30){ 
-            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star-half" style="font-size:48px;color:yellow"></i>';}
+            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star-half" style="font-size:48px;color:#EAD300"></i>';}
     
         else if(score>=20){ 
-            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star" style="font-size:48px;color:yellow"></i>';}
+            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star" style="font-size:48px;color:#EAD300"></i>';}
     
         else if(score>=10){
-            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:yellow"></i><i class="fa fa-star-half" style="font-size:48px;color:yellow">';
+            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:#EAD300"></i><i class="fa fa-star-half" style="font-size:48px;color:#EAD300">';
         }
         else if(score>=5){
-            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:yellow"></i>';
+            document.getElementById('comment').innerHTML = '<i class="fa fa-star" style="font-size:48px;color:#EAD300"></i>';
         }
         else if(score>1){
-            document.getElementById('comment').innerHTML = '<i class="fa fa-star-half" style="font-size:48px;color:yellow"></i>';
+            document.getElementById('comment').innerHTML = '<i class="fa fa-star-half" style="font-size:48px;color:#EAD300"></i>';
         }
         else{
             document.getElementById('comment').innerHTML = '<i class="fa fa-frown" style="font-size:48px;color:#CD853F"></i>';
