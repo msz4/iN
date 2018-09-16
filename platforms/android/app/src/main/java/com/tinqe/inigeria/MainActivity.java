@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.tinqe.testnative;
+package com.tinqe.inigeria;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

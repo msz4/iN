@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.tinqe.testnative;
+package com.tinqe.inigeria;
 
 public final class R {
   public static final class drawable {
